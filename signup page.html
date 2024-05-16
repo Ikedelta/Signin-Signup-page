@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>Create New Account</title>
+   
+</head>
+<body>
+    
+    <form action="">
+        
+        <h1>Create New Account</h1>
+        <div class="formcontainer">
+            <i id="user" class="fa-solid fa-user-tie "></i>
+           <div>
+            <input id="firstname" type="text" placeholder="First Name" autofocus>
+            <input id="lastname" type="text" placeholder="Last Name"><br>
+           </div>
+
+            <div>
+                <input id="email" type="email" placeholder="Email">
+                <input id="password" type="password" placeholder="Password"><br>
+            </div>
+
+           
+                <input id="tel" type="text" placeholder="Telephone Number">
+                <input id="field" type="text" placeholder="Field of studies"><br>
+           
+
+             
+                <label for="date">Date of Birth</label><br>
+                <input id="date" type="date">
+             
+
+            
+                <fieldset class="fieldset">
+                    <legend>Gender</legend>
+                    <label for="Male">Male</label>
+                    <input id="male" type="radio" name="gender" >
+                    <label for="Female">Female</label>
+                    <input id="female" type="radio" name="gender">
+                </fieldset>
+            
+
+             <div>
+                <select name="continent" id="">
+                    <option value="default" selected>--Select your continent--</option>
+                    <option id="Africa" value="African">Africa</option>
+                    <option id="Asia" value="Asia">Asia</option>
+                    <option id="America" value="America">America</option>
+                    <option id="Europe" value="Europe">Europe</option>
+                    <option id="Australia" value="Australia">Australia</option>
+                    <option id="Antartica" value="Antartica">Antartica</option>
+                </select>
+             </div>
+          
+          
+           
+             <div class="upload">
+                <label for="Passport">Upload a picture of you</label>
+                <input type="file">
+             </div>
+             <div class="Tnc">
+                <label for="">Terms and conditions</label>
+                <input type="checkbox" value=""><br>
+            </div>
+            <input id="Submit" onclick="sendmail()" type="button" value="Submit">
+
+        <iframe width="100%" height="155" 
+            src="https://www.youtube.com/embed/EragaUzQ1hc?si=kcwd9-5uBrq-IFUb" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        
+         
+
+        </div>
+        
+
+    </form>
+
+   
+</body>
+</html>

@@ -1,0 +1,289 @@
+
+html{
+    scroll-behavior:auto;
+}
+
+
+
+body{
+    background-color: rgb(233, 210, 255);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Montserrat;
+   
+}
+
+.main{
+    max-width: 900px;
+}
+
+.container{
+    
+    background-color: white;
+    grid-auto-flow: column;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    width: 900px;
+    height: 600px;
+    
+}
+
+
+.socialMediaicons i{
+   border: 1px solid rgba(0, 0, 0, 0.397);
+   padding: 18px;
+   border-radius: 10px;
+   transition:all 0.6s ease-in-out;
+
+
+}
+
+.socialMediaicons i:hover{
+    color: white;
+   cursor: pointer;
+    background-color:  rgb(67, 1, 129);
+    border-color: white;
+
+
+}
+
+.signincontainer{
+   width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin{
+    text-align: center; 
+}
+
+
+.signin h2{
+    font-size: 35px;
+}
+
+.signin a{
+    text-decoration: none;
+}
+input[type=button]{
+    padding: 12px;
+    width: 180px;
+    background-color: rgb(67, 1, 129);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Montserrat;
+    transition: 0.9s ease;
+
+}
+
+input[type=button]:hover{
+    scale:1.11;
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.2);
+}
+
+input[type=email],[type=password],[type=text], [type=date]{
+    margin: 10px;
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    background-color: rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
+    width: 300px;
+    border-radius: 5px;
+    font-family: Montserrat;
+
+}
+
+input:focus{
+    border: none;
+    outline: 2px solid rgb(67, 1, 129);
+
+}
+
+select:focus{
+    outline: 2px solid rgb(67, 1, 129);
+}
+
+
+
+input[type=date]{
+    height: 25px;
+    border-radius: 5px;
+    font-family: Montserrat;
+}
+
+#email{
+    margin-bottom: 15px;
+}
+
+
+
+.signupcontainer{
+    background-color: rgb(67, 1, 129);
+    width: 100%;
+    border-radius: 180px 20px 20px 90px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-image: url(png.png);
+    
+
+}
+
+.signup{
+    color: white;
+    text-align: center;
+    display: grid;
+}
+
+.signup h2{
+    font-size: 35px;
+}
+
+
+.signup a:hover{
+    background-color: white;
+    
+    color: rgb(67, 1, 129);
+    transition: 0.6s;
+}
+.signup a{
+    
+    border: 1px solid white;
+    background-color: rgb(67, 1, 129);
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: Montserrat;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    
+}
+
+/* Signup page styles*/
+
+form{
+    height: 100vh;
+    
+}
+
+#user{
+    
+   font-size: 50px;
+    color:rgb(67, 1, 129);
+    display: inline-block;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+  
+}
+
+form h1{
+    text-align: center;
+    color: rgb(67, 1, 129);
+}
+
+.formcontainer{
+    background-color: white;
+    height: 100vh;
+    max-width: 900px;
+    padding: 30px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(8, 8, 8, 0.363);
+}
+
+fieldset{
+    text-align: center;
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(233, 210, 255);
+    display: inline-block;
+
+}
+
+legend{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+select{
+    border: 0;
+    background-color: rgb(233, 210, 255);
+    font-size: large;
+    font-family: Montserrat;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.Tnc{
+  font-size: small;
+  text-align: center;
+  margin: 15px;
+}
+
+.upload{
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+}
+
+#Submit{
+    font-size: large;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#Submit:hover{
+    scale: 1;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+     background-color: rgba(67, 1, 129, 0.74);
+}
+
+#Submit:active{
+    background-color: rgb(67, 1, 129);
+    transition: 0.3s;
+}
+
+@media screen and (max-width:700px){
+
+.container{
+    position: static;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.signupcontainer{
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+}
+
+progress{
+    width: 50%; height: 100px;
+}
+
+progress::-webkit-progress-bar-value{
+    background: green;
+    border-radius: 2px;
+}
+
+progress::-moz-progress-bar{
+    background: lawngreen;
+}
